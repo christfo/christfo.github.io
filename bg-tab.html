@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script type='text/javascript' src='bg-tab.js'></script>
+   </head>
+   <body onload='setup_listener();'>
+      <div>This page can be loaded in parent mode or child mode</div>
+      <div>input 1:</div>
+      <input id='input_1' type='text'><br>
+      <div>input 2:</div>
+      <input id='input_2' type='text'><br>
+      <div>Total focus events:<span id='total_focus'>0</span></div>
+      <div>Total blur events:<span id='total_blur'>0</span></div>
+      <div>Current focus on:<span id='cur_focus'>Not Initialized</span></div>
+      <div>Current visibility:<span id='visibility_event'>Not Initialized</span></div>
+      <div>Current has focus:<span id='has_focus_event'>Not Initialized</span></div>
+      <div>Polling focus:<span id='has_focus_poll'>Not Initialized</span></div>
+      <div>Polling visibility:<span id='visibility_poll'>Not Initialized</span></div>
+      <button id='button_open_tab' onclick='open_tab();'>open tab</button>
+      <br>
+      <button id='button_open_win' onclick='open_win();'>open window</button>
+      <br>
+      <button id='button_close' onclick='close_self();'>close self</button>
+   </body>
+</html>
+
